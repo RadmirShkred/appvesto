@@ -35,7 +35,8 @@ main {
   height: 140vh;
 
   .content-container {
-    margin: 0 5vw;
+    width: 1200px;
+    margin: 0 auto;
 
     .promotext-container {
       display: flex;
@@ -91,8 +92,34 @@ main {
 
       .content-right {
         display: flex;
+        flex-direction: column;
         width: 70%;
+
+        .content-right-top {
+          height: 90%;
+          background: #000;
+        }
+
+        .content-right-bottom {
+          height: 10%;
+          background: #3fa8f3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          span {
+            text-transform: uppercase;
+            color: #fff;
+          }
+        }
       }
+    }
+
+    .links {
+      width: 100%;
+      height: 100px;
+      background: #fff;
     }
   }
 }
